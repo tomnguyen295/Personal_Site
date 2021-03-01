@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Sora&display=swap');
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0% }
+    to { width: 86% }
+  }
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+
+
+* {
+    font-family: 'Sora', monospace;
+    font-family: 'Cabin', sans-serif;
+    /* background: rgba(120,120,120); */
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {
+    outline: 0;
+}
+
+.mainBanner {
+    background: linear-gradient(to right, rgba(120,120,120),rgba(60,60,60));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainTitle {
+    font-size: 2em;
+    margin: 0 10px;
+}
+
+.mainNavBar {
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+.mainNavList {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.mainNavItem {
+    font-size: 1.5em;
+    display: inline;
+    margin: 5px 20px;
+    padding: 10px;
+}
+
+.mainNavItem a {
+    text-decoration: none;
+
+}
+
+.mainNavItem:hover {
+    background: radial-gradient(rgba(69,69,69), lavender);
+    border-radius: 10px;
+}
+
+.mainNavItem:active {
+    background: radial-gradient(rgb(164, 164, 250), rgba(69,69,69));
+}
+
+.mainNavItem a:hover {
+    color: rgba(217, 184, 252)
+
+}
+
+.mainNavItem a:active {
+    color: rgba(217, 184, 252)
+}
+
+.mainContent {
+    background-color: rgba(217, 184, 252);
+    background: linear-gradient(135deg, rgba(217, 184, 252), black );
+    height: 500px;
+    
+}
+
+.contentContainer {
+    margin-top: 50px;
+    max-width: 800px;
+    /* text-align: center; */
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    flex-wrap: wrap;
+}
+
+.contentRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sectionIntro {
+    width: 400px;
+    font-family: 'Cabin', sans-serif;
+    font-size: 4.5em;
+    font-weight: bold;
+}
+
+.buttonContainer {
+    /* margin: auto; */
+}
+
+.sectionButton {
+    background: rgba(69,69,69) ;
+    /* color: rgb(30, 171, 218); */
+    color: white;
+    /* border: 2px outset green; */
+    border-radius: 10px;
+    padding: 5px 10px;
+    font-size: 30px;
+}
+
+.sectionButton:hover {
+    color: rgba(217, 184, 252);
+}
+
+.coolTypes {
+    display: inline-block;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 4.5s steps(40, end),
+      blink-caret .5s step-end infinite;
+    margin-top: 75px;
+    font-size: 1.5em;
+    
+}
+
+
